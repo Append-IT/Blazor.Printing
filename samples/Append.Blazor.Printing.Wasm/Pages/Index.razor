@@ -1,0 +1,27 @@
+﻿@page "/"
+<h1>Append's PDF Printing for Blazor</h1>
+
+<p>
+    Print.js was primarily written to help us print PDF files directly within our apps, without leaving the interface, and no use of embeds. For unique situations where there is no need for users to open or download the PDF files, and instead, they just need to print them.
+</p>
+<p>
+    One scenario where this is useful, for example, is when users request to print reports that are generated on the server side. These reports are sent back as PDF files. There is no need to open these files before printing them. Print.js offers a quick way to print these files within our apps.
+</p>
+
+<blockquote>PDF files must be served from the same domain as your app is hosted under. Print.js uses iframe to load files before printing them, therefore, it is limited by the <a href="https://en.wikipedia.org/wiki/Same-origin_policy" target="_blank">Same Origin Policy</a>. This helps preventing <a href="https://en.wikipedia.org/wiki/Cross-site_scripting" target="_blank">Cross-site scripting</a> (XSS) attacks.</blockquote>
+<Append.Blazor.Printing.Documentation.Examples.Default />
+<Append.Blazor.Printing.Documentation.Examples.Large />
+<Append.Blazor.Printing.Documentation.Examples.Base64 />
+
+
+@code{
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+
+            //  document.querySelectorAll('pre code').forEach((block) => {
+            // hljs.highlightBlock(block);
+            //});
+            base.OnAfterRender(firstRender);
+    }
+}

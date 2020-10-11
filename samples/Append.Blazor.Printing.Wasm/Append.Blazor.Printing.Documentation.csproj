@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.0-rc.1.20451.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.0-rc.1.20451.17" PrivateAssets="all" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0-rc.1.20451.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\source\Append.Blazor.Printing\Append.Blazor.Printing.csproj" />
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<ItemGroup>
+			<Examples Include="$(ProjectDir)Examples\*.razor" />
+			<Readme Include="$(SolutionDir)README.md" />
+		</ItemGroup>
+
+		<!--<Message Text="Copying the README.md file to the wwwroot/docs folder." Importance="High" />
+		<Copy SourceFiles="@(Readme)" DestinationFolder="$(ProjectDir)\wwwroot\docs" />-->
+
+		<Message Text="Copying the example files to the wwwroot/examples folder." Importance="High" />
+		<Copy SourceFiles="@(Examples)" DestinationFiles="$(ProjectDir)wwwroot\examples\%(RecursiveDir)%(Filename).md" />
+	</Target>
+
+</Project>
