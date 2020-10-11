@@ -24,7 +24,7 @@ namespace Append.Blazor.Printing
             if (module is null)
                 await ImportModule();
 
-            await module.InvokeVoidAsync("printFile", new PrintOptionsAdapter(options));
+            await module.InvokeVoidAsync("print", new PrintOptionsAdapter(options));
         }
 
         public Task Print(string printable)
