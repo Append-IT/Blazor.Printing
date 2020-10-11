@@ -24,7 +24,7 @@ namespace Append.Blazor.Printing
             if (module is null)
                 await ImportModule();
 
-            await module.InvokeVoidAsync("print", new PrintOptionsAdapter(options));
+            await module.InvokeVoidAsync("printFile", new PrintOptionsAdapter(options));
         }
 
         public Task Print(string printable)
@@ -40,7 +40,5 @@ namespace Append.Blazor.Printing
         {
             module = await jsRuntime.InvokeAsync<JSObjectReference>("import", "./_content/Append.Blazor.Printing/scripts.js");
         }
-
-
     }
 }
