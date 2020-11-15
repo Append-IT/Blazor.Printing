@@ -1,11 +1,12 @@
 ﻿@inject DocumentationService DocumentationService
-
+@using MonacoRazor
 @Documentation
 <h4>Try it out</h4>
 @Code
 <br />
 <h4>Code</h4>
-<pre><code class="razor">@sampleCode</code></pre>
+
+<CodeEditor Language="razor" @bind-Code="sampleCode"/>
 
 @code{
     [Parameter] public RenderFragment Documentation { get; set; }

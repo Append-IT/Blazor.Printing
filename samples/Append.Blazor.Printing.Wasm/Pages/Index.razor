@@ -18,16 +18,3 @@
 <Append.Blazor.Printing.Documentation.Examples.Large />
 <hr />
 <Append.Blazor.Printing.Documentation.Examples.Base64 />
-
-
-@code{
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (firstRender)
-
-            //  document.querySelectorAll('pre code').forEach((block) => {
-            // hljs.highlightBlock(block);
-            //});
-            base.OnAfterRender(firstRender);
-    }
-}

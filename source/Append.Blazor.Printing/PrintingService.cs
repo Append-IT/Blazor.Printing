@@ -11,7 +11,7 @@ namespace Append.Blazor.Printing
 {
     public class PrintingService : IPrintingService
     {
-        private JSObjectReference module;
+        private IJSObjectReference module;
         private readonly IJSRuntime jsRuntime;
 
         public PrintingService(IJSRuntime jsRuntime)
@@ -38,7 +38,7 @@ namespace Append.Blazor.Printing
 
         internal async ValueTask ImportModule()
         {
-            module = await jsRuntime.InvokeAsync<JSObjectReference>("import", "./_content/Append.Blazor.Printing/scripts.js");
+            module = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/Append.Blazor.Printing/scripts.js");
         }
     }
 }

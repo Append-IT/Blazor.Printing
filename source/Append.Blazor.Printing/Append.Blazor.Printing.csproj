@@ -2,17 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <Version>0.1.0</Version>
+    <Version>1.0.0</Version>
     <Authors>Benjamin Vertonghen</Authors>
     <Company>Append</Company>
     <Description>Print and Save files in Blazor using the native dialog box using JavaScript Interop.</Description>
     <PackageProjectUrl>https://github.com/Append-IT/Append.Blazor.Printing</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Append-IT/Append.Blazor.Printing</RepositoryUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
 
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0-rc.1.20451.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.0" />
   </ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\LICENSE">
+	    <Pack>True</Pack>
+	    <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
 
 </Project>

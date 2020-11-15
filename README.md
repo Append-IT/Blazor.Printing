@@ -13,7 +13,7 @@ You can read more about the service in [this blog post](https://medium.com/@benj
 
 You can install from NuGet using the following command:
 
-`Install-Package Append.Blazor.Printing -Version 0.1.0`
+`Install-Package Append.Blazor.Printing`
 
 ### Setup
 
