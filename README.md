@@ -9,6 +9,9 @@ Print and Save files in Blazor using the native dialog box using JavaScript Inte
 ## The blogpost
 You can read more about the service in [this blog post](https://medium.com/@benjaminvertonghen/printing-pdfs-in-blazor-8dff559101f9).
 
+## Documentation
+Documentation and examples can be found [here](https://blazor-printing.append.be/)
+
 ### Installing
 
 You can install from NuGet using the following command:
