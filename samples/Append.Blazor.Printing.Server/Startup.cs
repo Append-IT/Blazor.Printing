@@ -29,6 +29,7 @@ namespace Append.Blazor.Printing.Server
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddScoped<IPrintingService, PrintingService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

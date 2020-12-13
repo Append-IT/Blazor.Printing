@@ -1,6 +1,9 @@
 ﻿@page "/"
+@using Append.Blazor.Printing
+@inject IPrintingService PrintingService
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
-
+<button @onclick="@(()=> PrintingService.Print("docs/sample.pdf"))">
+    Print PDF
+</button>
