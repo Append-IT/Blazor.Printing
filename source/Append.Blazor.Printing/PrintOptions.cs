@@ -14,7 +14,7 @@
             Printable = printable;
         }
 
-        public PrintOptions(string printable, string modalMessage)
+        public PrintOptions(string printable, string modalMessage, PrintType printType = PrintType.Pdf)
         {
             Printable = printable;
             ModalMessage = modalMessage;
@@ -27,7 +27,7 @@
         /// <summary>
         /// Printable type.
         /// </summary>
-        internal PrintType Type { get; init; } = PrintType.Pdf;
+        internal PrintType Type { get; init; }
         /// <summary>
         /// Enable this option to show user feedback when retrieving or processing large PDF files.
         /// </summary>

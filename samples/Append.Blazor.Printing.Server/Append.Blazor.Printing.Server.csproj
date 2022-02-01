@@ -8,4 +8,8 @@
     <PackageReference Include="Append.Blazor.Printing" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\source\Append.Blazor.Printing\Append.Blazor.Printing.csproj" />
+  </ItemGroup>
+
 </Project>
