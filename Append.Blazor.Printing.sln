@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30524.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "source", "source", "{347A8D83-411C-4A9D-8C41-6DA16976F7FA}"
 EndProject
@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Append.Blazor.Printing.Docu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Append.Blazor.Printing", "source\Append.Blazor.Printing\Append.Blazor.Printing.csproj", "{757DD656-436F-46C4-8FCE-5A6B9D3337F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Append.Blazor.Printing.Server", "samples\Append.Blazor.Printing.Server\Append.Blazor.Printing.Server.csproj", "{52F912F5-3BA6-404E-9FFB-72EF1C6E5544}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Append.Blazor.Printing.Server", "samples\Append.Blazor.Printing.Server\Append.Blazor.Printing.Server.csproj", "{52F912F5-3BA6-404E-9FFB-72EF1C6E5544}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

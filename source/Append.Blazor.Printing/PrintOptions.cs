@@ -19,6 +19,7 @@
             Printable = printable;
             ModalMessage = modalMessage;
             ShowModal = true;
+            Type = printType;
         }
         /// <summary>
         /// Document source: pdf url or base64.
@@ -27,7 +28,7 @@
         /// <summary>
         /// Printable type.
         /// </summary>
-        internal PrintType Type { get; init; }
+        public PrintType Type { get; init; }
         /// <summary>
         /// Enable this option to show user feedback when retrieving or processing large PDF files.
         /// </summary>
