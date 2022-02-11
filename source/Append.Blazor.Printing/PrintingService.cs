@@ -27,13 +27,13 @@ namespace Append.Blazor.Printing
             await module.InvokeVoidAsync("print", new PrintOptionsAdapter(options));
         }
 
-        public Task Print(string printable)
+        public Task Print(string printable, PrintType printType = PrintType.Pdf)
         {
-            return Print(new PrintOptions(printable) { Printable = printable });
+            return Print(new PrintOptions(printable) { Printable = printable, Type = printType });
         }
-        public Task Print(string printable, bool showModal)
+        public Task Print(string printable, bool showModal, PrintType printType = PrintType.Pdf)
         {
-            return Print(new PrintOptions(printable) { ShowModal= showModal });
+            return Print(new PrintOptions(printable) { ShowModal= showModal, Type = printType });
         }
 
         internal async ValueTask ImportModule()

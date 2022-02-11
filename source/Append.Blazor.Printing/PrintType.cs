@@ -1,6 +1,6 @@
 ﻿namespace Append.Blazor.Printing
 {
-    internal enum PrintType
+    public enum PrintType
     {
         Pdf,
         Html,
