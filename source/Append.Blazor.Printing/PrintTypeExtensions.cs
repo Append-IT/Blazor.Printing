@@ -2,8 +2,11 @@
 
 namespace Append.Blazor.Printing
 {
-    public static class PrintTypeExtensions
+    internal static class PrintTypeExtensions
     {
+        /// <summary>
+        /// Adapts the <see cref="PrintType"/> to the JavaScript version.
+        /// </summary>
         public static string ToPrintJsString(this PrintType printType)
         {
             return printType switch
