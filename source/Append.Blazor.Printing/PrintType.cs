@@ -5,6 +5,7 @@
         Pdf,
         Html,
         Image,
-        Json
+        Json,
+        RawHtml
     }
 }

@@ -16,7 +16,7 @@ namespace Append.Blazor.Printing
         public PrintOptionsAdapter(PrintOptions options)
         {
             Printable = options.Printable;
-            Type = Enum.GetName(typeof(PrintType), options.Type).ToLower();
+            Type = options.Type.ToPrintJsString();
             ShowModal = options.ShowModal;
             ModalMessage = options.ModalMessage;
             Base64 = options.Base64 == true ? true : null;
