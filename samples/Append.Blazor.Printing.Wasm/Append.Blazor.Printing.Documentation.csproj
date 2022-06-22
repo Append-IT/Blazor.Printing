@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.0" PrivateAssets="all" />
-    <PackageReference Include="MonacoRazor" Version="1.0.0-20201105.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.5" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,9 +18,6 @@
 			<Examples Include="$(ProjectDir)Examples\*.razor" />
 			<Readme Include="$(SolutionDir)README.md" />
 		</ItemGroup>
-
-		<!--<Message Text="Copying the README.md file to the wwwroot/docs folder." Importance="High" />
-		<Copy SourceFiles="@(Readme)" DestinationFolder="$(ProjectDir)\wwwroot\docs" />-->
 
 		<Message Text="Copying the example files to the wwwroot/examples folder." Importance="High" />
 		<Copy SourceFiles="@(Examples)" DestinationFiles="$(ProjectDir)wwwroot\examples\%(RecursiveDir)%(Filename).md" />
