@@ -6,10 +6,11 @@
     </Documentation>
     <Code>
         @{
-            string rawHtml = @"
-        <h1>Print.js Raw HTML Print Test</h1>
-        <p style=""color: blue;"">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>";
+            string rawHtml = String.Join(
+                Environment.NewLine,
+                "<h1>Print.js Raw HTML Print Test</h1>",
+                "<p style=\"color: blue;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>",
+                "<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>");
         }
 
         <button @onclick="@(_ => PrintingService.Print(rawHtml, PrintType.RawHtml))">
