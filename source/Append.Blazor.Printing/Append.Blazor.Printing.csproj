@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Version>6.1.0</Version>
+    <Version>6.2.0</Version>
     <Authors>Benjamin Vertonghen</Authors>
     <Company>Append</Company>
     <Description>Print and Save files in Blazor using the native dialog box using JavaScript Interop.</Description>

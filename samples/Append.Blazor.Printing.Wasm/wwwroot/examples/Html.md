@@ -17,12 +17,12 @@
             </div>
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <label class="form-check-label text-primary" for="exampleCheck1">Check me out</label>
             </div>
         </form>
 
         <button @onclick="@(_ => PrintingService.Print("printable-form", PrintType.Html))">
-            Print Form Without Bootstrap Styling
+            Print Form
         </button>
     </Code>
 </Example>

@@ -12,6 +12,7 @@ namespace Append.Blazor.Printing
         public bool ShowModal { get; init; }
         public string ModalMessage { get; init; } = "Retrieving Document...";
         public bool? Base64 { get; set; }
+        public string TargetStyles { get; set; } = "['*']";
 
         public PrintOptionsAdapter(PrintOptions options)
         {
