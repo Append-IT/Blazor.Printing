@@ -12,8 +12,6 @@
     [Parameter] public RenderFragment Documentation { get; set; }
     [Parameter] public RenderFragment Code { get; set; }
     [Parameter] public string Name { get; set; }
-    private string id => Guid.NewGuid().ToString();
-
     private string sampleCode;
 
     protected override async Task OnParametersSetAsync()

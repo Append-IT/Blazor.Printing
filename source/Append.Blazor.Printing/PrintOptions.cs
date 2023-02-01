@@ -14,12 +14,13 @@
             Printable = printable;
         }
 
-        public PrintOptions(string printable, string modalMessage, PrintType printType = PrintType.Pdf)
+        public PrintOptions(string printable, string modalMessage, PrintType printType = PrintType.Pdf, bool useFontSizeWorkaround = false)
         {
             Printable = printable;
             ModalMessage = modalMessage;
             ShowModal = true;
             Type = printType;
+            UseFontSizeWorkaround = useFontSizeWorkaround;
         }
         /// <summary>
         /// Document source: pdf url or base64.
@@ -41,5 +42,10 @@
         /// Used when printing PDF documents passed as base64 data.
         /// </summary>
         public bool Base64 { get; set; }
+
+        /// <summary>
+        /// Uses empty font_size parameter as a workaround for issue https://github.com/crabbly/Print.js/issues/534.
+        /// </summary>
+        public bool UseFontSizeWorkaround { get; set; }
     }
 }
